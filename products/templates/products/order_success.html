@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load custom_filters %}
+
+{% block title %}Order Success - CMC Glow{% endblock %}
+
+{% block content %}
+<div class="order-success-container">
+    <h1>🎉 Your order has been placed successfully!</h1>
+    <p>Thank you for your purchase. Your order details are below:</p>
+
+    <h2>Order Summary</h2>
+    <ul>
+        {% for item in order.items.all %}
+        <li>
+            <strong>{{ item.product.name }}</strong> - {{ item.quantity }} × ${{ item.price|floatformat:2 }}<br>
+            Subtotal: ${{ item.price|mul:item.quantity|floatformat:"2" }}
+        </li>
+        {% endfor %}
+    </ul>
+
+    <h3>Total: <strong>${{ order.total_amount|floatformat:2 }}</strong></h3>
+
+    <h2>Shipping Address</h2>
+    <p><strong>Name:</strong> {{ order.shipping_name }}</p>
+    <p><strong>Address:</strong> {{ order.shipping_address }}</p>
+    <p><strong>City:</strong> {{ order.shipping_city }}</p>
+    <p><strong>State:</strong> {{ order.shipping_state }}</p>
+    <p><strong>ZIP Code:</strong> {{ order.shipping_zip }}</p>
+    <p><strong>Country:</strong> {{ order.shipping_country }}</p>
+
+    <h2>Delivery Method</h2>
+    <p><strong>Delivery via Sameday Courier</strong></p>
+    <p>Your order will be shipped to the provided address using <strong>Sameday Courier</strong>.</p>
+    <p>Estimated delivery: <strong>1–2 business days</strong>.</p>
+    <p>Tracking details will be sent to your email after dispatch.</p>
+
+    <div class="thank-you">
+        <p>✨ Thank you for choosing <strong>CMC Glow</strong>! ✨</p>
+        <a href="{% url 'home' %}" class="button">Back to Home</a>
+    </div>
+</div>
+
+<style>
+.order-success-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1, h2, h3 {
+    color: #4CAF50;
+    text-align: center;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+}
+.thank-you {
+    text-align: center;
+    margin-top: 20px;
+}
+</style>
+{% endblock %}

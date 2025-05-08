@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %}Register - Seoul Glow{% endblock %}
+
+{% block content %}
+<div class="register-container">
+    <h2>Crează-ți un cont nou</h2>
+
+    <!-- Afișare mesaje globale -->
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% if form.non_field_errors %}
+        <div class="error">
+            {% for error in form.non_field_errors %}
+                <p>{{ error }}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    <form method="post" action="{% url 'register' %}">
+        {% csrf_token %}
+
+        <div class="form-group">
+            <label for="id_username">Username:</label>
+            {{ form.username }}
+            {% if form.username.errors %}
+                <div class="error">
+                    {% for error in form.username.errors %}
+                        <p>{{ error }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+
+        <div class="form-group">
+            <label for="id_password1">Password:</label>
+            {{ form.password1 }}
+            {% if form.password1.errors %}
+                <div class="error">
+                    {% for error in form.password1.errors %}
+                        <p>{{ error }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+
+        <div class="form-group">
+            <label for="id_password2">Confirmă parola:</label>
+            {{ form.password2 }}
+            {% if form.password2.errors %}
+                <div class="error">
+                    {% for error in form.password2.errors %}
+                        <p>{{ error }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+
+        <div class="button-container">
+            <button type="submit">Înregistrează-te</button>
+        </div>
+        <pre>{{ form.errors }}</pre>  {# <- linia nouă adăugată pentru debug #}
+    </form>
+
+    <p>Ai deja un cont? <a href="{% url 'login' %}">Autentifică-te aici</a>.</p>
+
+    <!-- ✅ Afișare erori brute pentru debugging (opțional, poți șterge ulterior) -->
+    {# <pre>{{ form.errors }}</pre> #}
+</div>
+{% endblock %}
+
+

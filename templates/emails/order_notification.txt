@@ -1,0 +1,21 @@
+New order placed by {{ user.username }}
+
+🧾 Order Details:
+Order ID: {{ order.id }}
+Total Amount: ${{ order.total_amount|floatformat:2 }}
+
+🛒 Items:
+{% for item in items %}
+- {{ item.product.name }} × {{ item.quantity }} = ${{ item.subtotal|floatformat:2 }}
+{% empty %}
+(No items found.)
+{% endfor %}
+
+📍 Shipping Information:
+Name: {{ order.shipping_name }}
+Address: {{ order.shipping_address }}
+City: {{ order.shipping_city }}, {{ order.shipping_state }}
+ZIP Code: {{ order.shipping_zip }}
+Country: {{ order.shipping_country }}
+
+🚚 Shipping Method: {{ order.shipping_method }}

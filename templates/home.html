@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}CMC GLOW - Home{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <h1>Welcome to <strong>CMC GLOW</strong></h1>
+    <p>Your ultimate destination for authentic Korean skincare products</p>
+</section>
+
+<section id="products" class="container">
+    <div class="filter-section">
+        <h3>Filter Products</h3>
+        <form id="filter-form" method="get" action="{% url 'product_list' %}">
+            {% csrf_token %}
+
+            <h4>By Product Type</h4>
+            <div>
+                {% for label in product_type_list %}
+                 <input type="checkbox" name="product_types" value="{{ label }}" {% if label in selected_product_types %}checked{% endif %}> {{ label }}<br>
+                {% endfor %}
+            </div>
+
+            <h4>By Skin Concern</h4>
+            <div>
+                {% for concern in skin_concern_list %}
+                <input type="checkbox" name="skin_concerns" value="{{ concern }}" {% if concern in selected_skin_concerns %}checked{% endif %}> {{ concern }}<br>
+                {% endfor %}
+            </div>
+
+            <h4>By Skin Type</h4>
+            <div>
+                {% for skin_type in skin_type_list %}
+                <input type="checkbox" name="skin_types" value="{{ skin_type }}" {% if skin_type in selected_skin_types %}checked{% endif %}> {{ skin_type }}<br>
+                {% endfor %}
+            </div>
+
+            <button type="submit">Apply Filters</button>
+            <button type="button" id="clear-filters-btn">Clear Filters</button>
+
+            <h4>Sort by</h4>
+            <div class="sorting-options">
+                <select id="sort_by" name="sort_by" onchange="this.form.submit()">
+                    <option value="">Default</option>
+                    <option value="price_asc" {% if sort_by == 'price_asc' %}selected{% endif %}>Price: Low to High</option>
+                    <option value="price_desc" {% if sort_by == 'price_desc' %}selected{% endif %}>Price: High to Low</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <div class="products-section-wrapper">
+        <div class="products-section">
+            {% include 'products/product_list_partial.html' %}
+        </div>
+    </div>
+</section>
+
+<script>
+document.getElementById('clear-filters-btn').addEventListener('click', function () {
+    const checkboxes = document.querySelectorAll('#filter-form input[type="checkbox"]');
+    checkboxes.forEach(box => box.checked = false);
+    document.getElementById('sort_by').value = '';
+    document.getElementById('filter-form').submit();
+});
+</script>
+{% endblock %}
+
+

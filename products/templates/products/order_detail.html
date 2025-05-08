@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Detalii Comandă{% endblock %}
+
+{% block content %}
+<div class="order-detail-container">
+    <h2>Detalii Comandă #{{ order.id }}</h2>
+
+    <p><strong>Data comenzii:</strong> {{ order.created_at|date:"F d, Y H:i" }}</p>
+    <p><strong>Status:</strong> {{ order.status }}</p>
+    <p><strong>Total:</strong> {{ order.total_amount }} RON</p>
+
+    <h3>Produse comandate:</h3>
+    <ul>
+        {% for item in order.items.all %}
+            <li>
+                {{ item.product.name }} — {{ item.quantity }} buc. — {{ item.price }} RON / buc.
+            </li>
+        {% endfor %}
+    </ul>
+
+    <br>
+    <a href="{% url 'dashboard' %}" class="btn-back">⟵ Înapoi la Dashboard</a>
+</div>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block title %}CMC Glow - Contact{% endblock %}
+
+{% block content %}
+<section id="contact" class="container contact-section">
+    <div class="contact-content">
+        <h2>Contact Us</h2>
+        <p>For any inquiries, please email us at <a href="mailto:support@cmcglow.com">support@cmcglow.com</a></p>
+
+        <form id="contact-form" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <div id="success-message" style="display:none; color: green; margin-top: 10px;">
+            ✅ Your message has been sent successfully!
+        </div>
+    </div>
+</section>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+    fetch("{% url 'contact_us' %}", {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+        }
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.success) {
+            document.getElementById('success-message').style.display = 'block';
+            document.getElementById('contact-form').reset();
+        } else {
+            alert("❌ Failed to send message. Try again later.");
+        }
+    });
+});
+</script>
+{% endblock %}
+

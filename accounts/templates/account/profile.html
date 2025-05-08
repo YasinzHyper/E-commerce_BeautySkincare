@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Profilul meu - Seoul Glow{% endblock %}
+
+{% block content %}
+<div class="profile-container">
+    <h2>Profilul meu</h2>
+
+    <!-- Afișare mesaje succes/eroare -->
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="id_date_of_birth">Data nașterii:</label>
+            {{ form.date_of_birth }}
+        </div>
+
+        <div class="form-group">
+            <label>Metoda de livrare:</label>
+            {{ form.delivery_method }}
+        </div>
+
+        <div class="form-group">
+            <label for="id_address">Adresă:</label>
+            {{ form.address }}
+        </div>
+
+        <div class="form-group">
+            <label for="id_phone_number">Telefon:</label>
+            {{ form.phone_number }}
+        </div>
+
+        <div class="button-container">
+            <button type="submit">Salvează profilul</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
