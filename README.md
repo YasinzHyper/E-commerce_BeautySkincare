@@ -1,23 +1,32 @@
-🛍️ E-commerce_Beauty-Skincare
-An online cosmetics store built with Django. This project allows users to browse, search, and purchase cosmetic products through a clean and functional web interface.
+# 🌸 CMC GLOW – E-commerce Beauty & Skincare
 
-## 🚀 Features
+An online store built with Django for selling authentic Korean skincare products.  
+It includes user authentication, shopping cart, wishlist, order history, Stripe card payments, and Sameday delivery.
 
-- User registration and authentication
-- Product listing by categories
-- Shopping cart functionality
-- Order placement and confirmation
-- Admin panel for product and order management
-- Responsive UI (Bootstrap or custom styling)
-- Integration-ready for delivery APIs (e.g. Sameday)
+---
 
-## 🛠️ Technologies Used
+## 🔑 Features
 
-- Python 3.12+
-- Django 5.x
-- HTML5 & CSS3
-- SQLite (development)
-- Pillow (for image handling)
+- 👤 User registration and login
+- 🔐 Secure authentication
+- 🛒 Add/remove products from cart
+- ❤️ Add/remove products from wishlist
+- 💳 Checkout using Stripe
+- 🧾 View order history
+- 🚚 Integration with Sameday delivery
+- 📝 Blog/articles system (optional)
+
+---
+
+## 🧪 Technologies Used
+
+- **Backend:** Python, Django
+- **Frontend:** HTML, CSS
+- **Database:** SQLite 
+- **Payments:** Stripe API
+- **Delivery:** Sameday API
+
+---
 
 ## 📦 Requirements
 
@@ -43,13 +52,35 @@ Open in browser:
 http://127.0.0.1:8000
 
 📁 Project Structure
-csharp
-Cosmetics_store/
-├── app/                # Main Django app
-├── static/             # Static files (CSS, JS, images)
-├── templates/          # HTML templates
+Beauty-Skincare/
+├── accounts/            # User authentication and profiles
+├── media/
+├── products/            # Product and cart logic
+├── screenshots/         # Screenshots for README
+├── skincare_store/
+├── static/              # CSS, JS, and images
+│   └── images/
+├── templates/           # HTML templates
+├── venv/
 ├── manage.py
 ├── requirements.txt
 └── README.md
-📸 Screenshots
-![Captură de ecran 2025-05-13 220919](https://github.com/user-attachments/assets/4ad1902c-48c7-4133-8f7b-571f2e462d6a)
+## 📸 Screenshots
+
+### 🏠 Home
+![Home](screenshots/home.png)
+
+### ❤️ Wishlist
+![Wishlist](screenshots/wishlist.png)
+
+### 🛒 Cart
+![Cart](screenshots/cart.png)
+
+### 👤 Account
+![Account](screenshots/account.png)
+
+### 🔓 Logout
+![Logout](screenshots/logout.png)
+
+### 📬 Contact
+![Contact](screenshots/contact.png)
