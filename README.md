@@ -68,19 +68,19 @@ Beauty-Skincare/
 ## 📸 Screenshots
 
 ### 🏠 Home
-![Home](screenshots/home.png)
+![Home](https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/home.png?raw=true)
 
 ### ❤️ Wishlist
-![Wishlist](screenshots/wishlist.png)
+![Wishlist](https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/wishlist.png?raw=true)
 
 ### 🛒 Cart
-![Cart](screenshots/cart.png)
+![Cart](https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/cart.png?raw=true)
 
 ### 👤 Account
-![Account](screenshots/account.png)
+![Account](https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/account.png?raw=true)
 
 ### 🔓 Logout
-![Logout](screenshots/logout.png)
+![Logout](https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/logout.png?raw=true)
 
 ### 📬 Contact
-![Contact](screenshots/contact.png)
+![Contact](https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/contact.png?raw=true)
