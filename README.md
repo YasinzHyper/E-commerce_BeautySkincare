@@ -96,3 +96,5 @@ Beauty-Skincare/
 📜 Disclaimer
 
 This project is the result of the Advanced Programming (PA) laboratory at the Faculty of Automation, Computers and Electronics (FACE), University of Craiova (http://ace.ucv.ro/). It is intended for educational purposes and may contain limitations or incomplete features. Use it at your own risk, and ensure proper configuration for any production environment.
+![image](https://github.com/user-attachments/assets/cd1330e8-b800-4dae-9f83-f0eae9b869c7)
+
