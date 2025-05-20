@@ -76,25 +76,25 @@ Beauty-Skincare/
 ## 📸 Screenshots
 
 ### 🏠 Home
-![Home](https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/home.png?raw=true)
+https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/home.png?raw=true
 
 ### ❤️ Wishlist
-![Wishlist](https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/wishlist.png?raw=true)
+https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/wishlist.png?raw=true
 
 ### 🛒 Cart
-![Cart](https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/cart.png?raw=true)
+https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/cart.png?raw=true
 
 ### 👤 Account
-![Account](https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/account.png?raw=true)
+https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/account.png?raw=true
 
 ### 🔓 Logout
-![Logout](https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/logout.png?raw=true)
+https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/logout.png?raw=true
 
 ### 📬 Contact
-![Contact](https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/contact.png?raw=true)
+https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/contact.png?raw=true
 
 📜 Disclaimer
 
 This project is the result of the Advanced Programming (PA) laboratory at the Faculty of Automation, Computers and Electronics (FACE), University of Craiova (http://ace.ucv.ro/). It is intended for educational purposes and may contain limitations or incomplete features. Use it at your own risk, and ensure proper configuration for any production environment.
-![image](https://github.com/user-attachments/assets/cd1330e8-b800-4dae-9f83-f0eae9b869c7)
+https://github.com/user-attachments/assets/cd1330e8-b800-4dae-9f83-f0eae9b869c7
 
