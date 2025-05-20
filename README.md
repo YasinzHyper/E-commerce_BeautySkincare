@@ -27,7 +27,7 @@ It includes user authentication, shopping cart, wishlist, order history, Stripe 
 ---
 
 ## 🧪 Technologies Used
-- Backend: Python, Django
+- Backend: Python, Django, JavaScript
 - Frontend: HTML, CSS
 - Database: SQLite 
 - Payments: Stripe API
