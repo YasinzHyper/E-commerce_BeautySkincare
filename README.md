@@ -15,7 +15,7 @@ It includes user authentication, shopping cart, wishlist, order history, Stripe 
 - 💳 Checkout with Stripe: Secure card payments via Stripe API.
 - 🧾 Order History: View past orders with details.
 - 🚚 Sameday Delivery Integration: Delivery options powered by Sameday API.
-- 📝 Blog/Articles System: Optional feature for skincare tips and product guides.
+- 📬 Contact Us Page: Form for customer inquiries and support.
 
 ⚠️ Known Issues and Limitations
 - Payment Processing: Stripe payments are in test mode and do not process real transactions.
