@@ -92,6 +92,9 @@ Beauty-Skincare/
 
 ### 📬 Contact
 ![Contact](https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/contact.png?raw=true)
+![384e7e29-5a58-4107-90e1-1d2a59fc6d90](https://github.com/user-attachments/assets/e6790b0a-5e3e-41f1-ae3c-a31b255b3905)
+![image](https://github.com/user-attachments/assets/1b06ad83-b608-4bdd-8b44-16f19601cae1)
+
 
 📜 Disclaimer
 
