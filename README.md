@@ -77,7 +77,6 @@ Beauty-Skincare/
 
 ### 🏠 Home
 https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/home.png?raw=true
-![image](https://github.com/user-attachments/assets/91b094b8-2a52-40d7-aff2-af7f9d588cf8)
 
 ### ❤️ Wishlist
 https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/wishlist.png?raw=true
