@@ -98,4 +98,3 @@ https://github.com/cataacraciun/E-commerce_BeautySkincare/blob/main/screenshots/
 This project is the result of the Advanced Programming (PA) laboratory at the Faculty of Automation, Computers and Electronics (FACE), University of Craiova (http://ace.ucv.ro/). It is intended for educational purposes and may contain limitations or incomplete features. Use it at your own risk, and ensure proper configuration for any production environment.
 https://github.com/user-attachments/assets/cd1330e8-b800-4dae-9f83-f0eae9b869c7
 
-![445770809-7c90f283-e72a-48be-ade7-a7b9845657c6](https://github.com/user-attachments/assets/80e09e73-96f2-4a82-bf73-0f5ad61837bf)
